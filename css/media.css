@@ -76,6 +76,20 @@
         text-align: center;
     }
 
+    header .menu .mobil_bt {
+        display: inline-block;
+        font-size: 16px;
+        float: left;
+        line-height: 72px;
+        margin-right: 10px;
+    }
+    header .menu .bt-paper {
+        padding: 10px 15px;
+    }
+    header .menu .bg-mobil{
+        display: none;
+    }
+
     header .menu ul li.active {
         border: 0;
         border-bottom: 2px solid #1798FF;
@@ -169,7 +183,71 @@
     .only-md {
         display: none !important;
     }
-
+    header .menu .bg-mobil {
+        text-align: left;
+        width: 100%;
+        height: 1000px;
+        background: rgba(102, 95, 95, 0.4);
+        clear: both;
+        float: none;
+        position: absolute;
+        z-index: 10;
+        margin-left: -15px;
+        text-align: left;
+    }
+    header .menu ul{
+        height: 100%;
+        width: 90%;
+        background: url('../img/menu-bg-mobil.png') no-repeat #1798FF right;
+        -webkit-background-size: cover;
+        background-size: cover;
+        padding-bottom: 400px;
+    }
+    header .menu ul li {
+        display: block;
+        color: #fff;
+        padding-left: 20px;
+        text-align: left;
+    }
+    header .menu ul li:last-child{
+        height: 100%;
+    }
+    header .menu ul li.active {
+        border: 0;
+        padding-top: 5px;
+        text-decoration: underline;
+    }
+    header .menu ul li.head-mobil-menu {
+        display: block;
+        color: #1798FF;
+        font-weight: bold;
+        background: #fff;
+        font-size: 22px;
+    }
+    header .menu ul li.head-mobil-menu span{
+        color: #1798FF;
+        font-size: 17px;
+        margin-right: 30px;
+    }
+    header .menu ul li.head-mobil-menu span img{
+        margin-top: -5px;
+    }
+    header .menu ul li.head-mobil-menu:hover{
+        color: #1798FF;
+    }
+    header .menu .mobil_bt {
+        display: inline-block;
+        font-size: 16px;
+        float: left;
+        line-height: 72px;
+        margin-right: 10px;
+    }
+    header .menu .logo {
+        width: auto;
+        text-align: center;
+        float: left;
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width : 680px) {
@@ -185,6 +263,11 @@
 @media only screen and (max-width : 680px) {
     .development-story ul li .carousel-container {
         margin-left: -36%;
+    }
+}
+@media only screen and (max-width: 680px){
+    .development-story ul li .carousel-container {
+        margin-left: -28%;
     }
 }
 @media only screen and (max-width : 575px) {
