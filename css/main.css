@@ -58,6 +58,8 @@ header .menu ul li {
   height: 39px;
   padding: 0 6px;
   -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
 }
@@ -71,11 +73,15 @@ header .menu ul li.active {
 header .menu ul li.menu-item:hover {
   color: #A8E34D;
   -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
 }
 header .menu ul li.menu-item:hover {
   -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
 }
@@ -86,9 +92,10 @@ header .menu .bt-paper {
   padding: 10px 31px;
   line-height: 16.5px;
   border: 1px solid #58BAFF;
-  -webkit-border-radius: 22px;
-          border-radius: 22px;
+  border-radius: 22px;
   -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
   float: right;
@@ -127,7 +134,7 @@ header .header-content .right-container {
 }
 header .header-content .right-container .right {
   height: auto;
-  background: url('../img/structure.png') no-repeat #1798ff right;
+  background: url('../img/structure.png') no-repeat #1798FF right;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 86px;
@@ -149,8 +156,7 @@ header .header-content .right-container .right p {
 header .header-content .right-container .right input[type=email] {
   height: 35px;
   width: 281px;
-  -webkit-border-radius: 8px;
-          border-radius: 8px;
+  border-radius: 8px;
   background-color: #B8D7F0;
   border: 0;
   color: #474646;
@@ -160,8 +166,7 @@ header .header-content .right-container .right input[type=email] {
 header .header-content .right-container .right button {
   height: 35px;
   width: 122px;
-  -webkit-border-radius: 8px;
-          border-radius: 8px;
+  border-radius: 8px;
   background-color: #90DC1C;
   border: 0;
   color: #fff;
@@ -177,6 +182,8 @@ header .header-content .right-container .right .social-network ul li {
   margin-right: 28px;
   text-align: center;
   -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
 }
@@ -194,10 +201,11 @@ header .header-content .right-container .right .social-network ul li img {
   -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
-  -webkit-filter: gray;
-          filter: gray;
+  filter: gray;
   /* IE 6-9 */
   -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
 }
@@ -397,7 +405,7 @@ header .header-content :-ms-input-placeholder {
 .advisers {
   background: #1798FF;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   text-align: center;
 }
 .team h2,
@@ -428,12 +436,10 @@ header .header-content :-ms-input-placeholder {
   display: inline-block;
   text-align: center;
 }
-.team .card-container,.team .front, .team .back{
-  height: 334px !important;
-}
 .team .card-container,
 .advisers .card-container {
   -webkit-perspective: 800px;
+  -moz-perspective: 800px;
   -o-perspective: 800px;
   perspective: 800px;
   display: inline-block;
@@ -444,7 +450,9 @@ header .header-content :-ms-input-placeholder {
 .team .card-container.hover .card,
 .advisers .card-container.hover .card {
   -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 .team .card-container.static:hover .card,
@@ -452,18 +460,20 @@ header .header-content :-ms-input-placeholder {
 .team .card-container.static.hover .card,
 .advisers .card-container.static.hover .card {
   -webkit-transform: none;
-  -ms-transform: none;
-      transform: none;
+  -moz-transform: none;
+  -o-transform: none;
+  transform: none;
 }
 .team .card,
 .advisers .card {
   -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
   -o-transition: -o-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  -o-transition: transform 0.5s;
   transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
   -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
   position: relative;
 }
@@ -472,12 +482,13 @@ header .header-content :-ms-input-placeholder {
 .team .back,
 .advisers .back {
   -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
   backface-visibility: hidden;
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);
-          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);
 }
 .team .front,
 .advisers .front {
@@ -501,7 +512,9 @@ header .header-content :-ms-input-placeholder {
   width: 255px;
   height: 330px;
   -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 .team .back .flip,
@@ -523,9 +536,8 @@ header .header-content :-ms-input-placeholder {
 .team .back,
 .advisers .back {
   width: 275px;
-  height: 400px;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  height: 350px;
+  border-radius: 4px;
 }
 .team .avatar,
 .advisers .avatar {
@@ -536,6 +548,7 @@ header .header-content :-ms-input-placeholder {
   float: none;
   clear: both;
   -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   margin-bottom: 0;
   cursor: auto;
@@ -604,17 +617,19 @@ footer span {
   cursor: pointer;
   padding: 10px 31px;
   border: 1px solid #58BAFF;
-  -webkit-border-radius: 22px;
-          border-radius: 22px;
+  border-radius: 22px;
   -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
 }
 footer span:hover {
-  -webkit-border-radius: 22px;
-          border-radius: 22px;
+  border-radius: 22px;
   border: 1px solid #09d915;
   -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
 }
@@ -627,6 +642,8 @@ footer ul li {
   display: inline-block;
   margin: 20px;
   -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
   color: #5E5E5E;
@@ -637,6 +654,8 @@ footer ul li {
 footer ul li:hover {
   color: #1999ff;
   -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
 }
@@ -646,10 +665,11 @@ footer ul li img {
   -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
-  -webkit-filter: gray;
-          filter: gray;
+  filter: gray;
   /* IE 6-9 */
   -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
   display: block;
@@ -661,10 +681,11 @@ footer ul li img:hover {
   -ms-filter: grayscale(0%);
   -o-filter: grayscale(0%);
   filter: grayscale(0%);
-  -webkit-filter: gray;
-          filter: gray;
+  filter: gray;
   /* IE 6-9 */
   -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
 }
