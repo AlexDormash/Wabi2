@@ -5,13 +5,17 @@
     }
 }
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1250px) {
+    header .header-content .right-container .right {
+        margin-bottom: 35px;
+    }
+}
 @media only screen and (max-width : 1200px) {
     header .header-content .right-container .right {
         margin-top: 30%;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 }
-
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
     .menu-fixed .container{
@@ -57,12 +61,20 @@
         margin-top: 6%;
     }
 }
+@media only screen and (max-width: 800px){
+    header .header-content .right-container .right {
+        margin-bottom: 0;
+    }
+}
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
     header .menu .logo {
         width: auto;
         text-align: center;
+    }
+    header .header-content .right-container .right {
+        margin-top: 0;
     }
     .development-story ul li .translate {
         top: 0px;
@@ -270,6 +282,11 @@
         margin-left: -28%;
     }
 }
+@media only screen and (max-width: 680px){
+    .development-story ul li .carousel-container {
+        margin-left: -45%;
+    }
+}
 @media only screen and (max-width : 575px) {
     .development-story ul li .carousel-container {
         margin-left: -51%;
@@ -298,6 +315,14 @@
         text-align: center;
         float: left;
         font-size: 16px;
+    }
+    header .header-content .left h2 {
+        font-size: 19px;
+        margin-bottom: 100px;
+        margin-top: 35px;
+    }
+    header .header-content .left p {
+        font-size: 14px;
     }
     .development-story ul li .translate {
         top: -20px;
@@ -329,9 +354,14 @@
     header .header-content .left {
         padding-left: 10px;
         border: 0;
-        padding-bottom: 100px;
         background-position-y: -5px;
         background-position-x: -591px;
+    }
+    header .header-content .right-container .right h2 {
+        font-size: 17px;
+    }
+    header .header-content .right-container .right p {
+        font-size: 11px;
     }
     header {
         background: inherit;

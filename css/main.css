@@ -139,7 +139,7 @@ header .header-content .right-container .right {
   padding-bottom: 20px;
   padding-left: 86px;
   margin-top: 45%;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 header .header-content .right-container .right h2 {
   color: #FFFFFF;
@@ -208,6 +208,9 @@ header .header-content .right-container .right .social-network ul li img {
   -ms-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
+}
+header .header-content .right-container .right .social-network ul li img.face {
+  width: 14px;
 }
 header .header-content ::-webkit-input-placeholder {
   color: #fff;
