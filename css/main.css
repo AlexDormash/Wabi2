@@ -273,6 +273,23 @@ header .header-content :-ms-input-placeholder {
   font-size: 16px;
   padding-bottom: 58px;
 }
+.development-story ul li .carousel-container {
+  text-align: center;
+}
+.development-story ul li .translate {
+  color: #1798FF;
+  font-family: "PT Sans";
+  font-size: 16px;
+  padding: 10px 20px;
+  line-height: 16.5px;
+  border: 1px solid #58BAFF;
+  border-radius: 22px;
+  position: relative;
+  display: inline-block;
+  top: 35px;
+  margin: auto;
+  cursor: pointer;
+}
 .development-story ul li div {
   max-width: 440px;
   margin-right: 30px;
@@ -330,6 +347,9 @@ header .header-content :-ms-input-placeholder {
 }
 .development-story ul li .carousel-container #carousel .carousel-feature img {
   left: 0;
+}
+.development-story ul li .carousel-container .translation {
+  display: none;
 }
 .development-story ul li::before {
   display: block;

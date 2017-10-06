@@ -47,6 +47,17 @@ $(document).ready(function() {
             $("header .menu .bg-mobil").slideUp();
         }
     });
+    $(".translate").on('click',function () {
+        if($(this).hasClass('active')){
+            $(this).removeClass('active').text('see translation');
+            $('.carousel-image').show();
+            $('.translation').hide();
+        } else {
+            $(this).addClass('active').text('see original');
+            $('.carousel-image').hide();
+            $('.translation').show();
+        }
+    })
 });
 
 // Адаптивные скрипты, которые срабатывают только при определенном разрешении экрана
