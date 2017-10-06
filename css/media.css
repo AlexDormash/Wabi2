@@ -138,7 +138,7 @@
     }
 
     .development-story ul li .carousel-container {
-        margin-left: -218px;
+        margin-left: -13%;
         overflow: hidden;
         width: 480px;
         padding-left: 25px;
@@ -177,6 +177,34 @@
         width: 700px;
         display: block;
         margin: auto;
+    }
+    .development-story ul li .carousel-container {
+        margin-left: -22%;
+    }
+}
+@media only screen and (max-width : 680px) {
+    .development-story ul li .carousel-container {
+        margin-left: -36%;
+    }
+}
+@media only screen and (max-width : 575px) {
+    .development-story ul li .carousel-container {
+        margin-left: -51%;
+    }
+}
+@media only screen and (max-width : 540px) {
+    .development-story ul li .carousel-container {
+        margin-left: -64%;
+    }
+}
+@media only screen and (max-width : 510px) {
+    .development-story ul li .carousel-container {
+        margin-left: -75%;
+    }
+}
+@media only screen and (max-width : 490px) {
+    .development-story ul li .carousel-container {
+        margin-left: -80%;
     }
 }
 
