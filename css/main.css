@@ -574,6 +574,11 @@ header .header-content :-ms-input-placeholder {
   background: #F8F8F8;
   text-align: center;
 }
+.advisers .card-container,
+.advisers .front,
+.advisers .back {
+  height: 400px;
+}
 .advisers h2 {
   color: #282828;
   font-family: Verdana;
